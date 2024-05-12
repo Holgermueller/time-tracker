@@ -10,29 +10,37 @@ html {
 .card {
   width: 90%;
   margin: 5% auto;
-  border-radius: 36px;
+  border-radius: 15px;
+  padding-top: 40px;
+  background-repeat: no-repeat !important;
+  background-position: top -12px right 8px !important;
+}
+
+.card-data-container {
   background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
 }
 
 .user-info {
   background-color: hsl(246, 80%, 60%);
-  border-radius: 36px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  border-radius: 15px;
+  padding: 42px 24px;
 }
 
 .user-info img {
   border: 3px solid hsl(0, 0%, 100%);
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  grid-row: 1/1;
-  grid-column: 1;
+  height: 75px;
+  width: 75px;
+  float: left;
+  margin: 0 16px 0 0;
 }
 
 h1 {
-  grid-column: 2;
-  grid-row: 2;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+  color: hsl(0, 0%, 100%);
 }
 
 .button-container {
@@ -46,6 +54,41 @@ h1 {
   border: none;
   background-color: transparent;
   color: hsl(236, 100%, 87%);
+}
+
+#user {
+  background-color: hsl(235, 46%, 20%);
+  padding-top: 0;
+}
+
+#work {
+  background: url("images/icon-work.svg");
+  background-color: hsl(15, 100%, 70%);
+}
+
+#play {
+  background-image: url("images/icon-play.svg");
+  background-color: hsl(195, 74%, 62%);
+}
+
+#study {
+  background-image: url("images/icon-study.svg");
+  background-color: hsl(348, 100%, 68%);
+}
+
+#exercise {
+  background-image: url("images/icon-exercise.svg");
+  background-color: hsl(145, 58%, 55%);
+}
+
+#social {
+  background-image: url("images/icon-social.svg");
+  background-color: hsl(264, 64%, 52%);
+}
+
+#selfCare {
+  background-image: url("images/icon-self-care.svg");
+  background-color: hsl(43, 84%, 65%);
 }
 
 .attribution {
