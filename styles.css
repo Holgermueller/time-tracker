@@ -7,6 +7,47 @@ html {
   color: hsl(236, 100%, 87%);
 }
 
+.card {
+  width: 90%;
+  margin: 5% auto;
+  border-radius: 36px;
+  background-color: hsl(235, 46%, 20%);
+}
+
+.user-info {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 36px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.user-info img {
+  border: 3px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  grid-row: 1/1;
+  grid-column: 1;
+}
+
+h1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+.button-container button {
+  border: none;
+  background-color: transparent;
+  color: hsl(236, 100%, 87%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
