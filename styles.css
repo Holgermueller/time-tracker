@@ -16,11 +16,6 @@ html {
   background-position: top -12px right 8px !important;
 }
 
-.card-data-container {
-  background-color: hsl(235, 46%, 20%);
-  border-radius: 15px;
-}
-
 .user-info {
   background-color: hsl(246, 80%, 60%);
   border-radius: 15px;
@@ -54,6 +49,48 @@ h1 {
   border: none;
   background-color: transparent;
   color: hsl(236, 100%, 87%);
+}
+
+.card-data-container {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title,
+.current {
+  color: hsl(0, 0%, 100%);
+}
+
+.title {
+  grid-row: 1;
+  font-weight: 500;
+}
+
+.ellipsis {
+  align-self: end;
+  justify-self: end;
+}
+
+.ellipsis button {
+  background-color: transparent;
+  border: none;
+}
+
+.current {
+  margin: 0;
+  grid-row: 2;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.previous {
+  grid-row: 2;
+  margin: 0;
+  align-self: center;
+  justify-self: end;
 }
 
 #user {
