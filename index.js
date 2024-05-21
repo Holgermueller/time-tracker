@@ -4,6 +4,8 @@ async function fetchJsonFile() {
   const response = await fetch("data.json");
   const data = await response.json();
 
+  document.getElementById("daily").style.color = "hsl(0, 0%, 100%)";
+
   document.getElementById("workCurrent").innerHTML =
     data[0].timeframes.daily.current + "hrs";
   document.getElementById("workPrevious").innerHTML =
@@ -24,7 +26,15 @@ async function fetchJsonFile() {
   document.getElementById("exercisePrevious").innerHTML =
     "Yesterday - " + data[3].timeframes.daily.previous + "hrs";
 
-  console.log(data);
+  document.getElementById("socialCurrent").innerHTML =
+    data[4].timeframes.daily.current + "hrs";
+  document.getElementById("socialPrevious").innerHTML =
+    "Yesterday - " + data[4].timeframes.daily.previous + "hrs";
+
+  document.getElementById("selfCareCurrent").innerHTML =
+    data[5].timeframes.daily.current + "hrs";
+  document.getElementById("selfCarePrevious").innerHTML =
+    "Yesterday - " + data[5].timeframes.daily.previous + "hrs";
 }
 
 // Daily
@@ -32,6 +42,10 @@ async function fetchJsonFile() {
 const showDaily = async () => {
   const response = await fetch("data.json");
   const data = await response.json();
+
+  document.getElementById("daily").style.color = "hsl(0, 0%, 100%)";
+  document.getElementById("weekly").style.color = "hsl(235, 45%, 61%)";
+  document.getElementById("monthly").style.color = "hsl(235, 45%, 61%)";
 
   document.getElementById("workCurrent").innerHTML =
     data[0].timeframes.daily.current + "hrs";
@@ -52,6 +66,16 @@ const showDaily = async () => {
     data[3].timeframes.daily.current + "hrs";
   document.getElementById("exercisePrevious").innerHTML =
     "Yesterday - " + data[3].timeframes.daily.previous + "hrs";
+
+  document.getElementById("socialCurrent").innerHTML =
+    data[4].timeframes.daily.current + "hrs";
+  document.getElementById("socialPrevious").innerHTML =
+    "Yesterday - " + data[4].timeframes.daily.previous + "hrs";
+
+  document.getElementById("selfCareCurrent").innerHTML =
+    data[5].timeframes.daily.current + "hrs";
+  document.getElementById("selfCarePrevious").innerHTML =
+    "Yesterday - " + data[5].timeframes.daily.previous + "hrs";
 };
 
 // Weekly
@@ -59,6 +83,10 @@ const showDaily = async () => {
 const showWeekly = async () => {
   const response = await fetch("data.json");
   const data = await response.json();
+
+  document.getElementById("daily").style.color = "hsl(235, 45%, 61%)";
+  document.getElementById("weekly").style.color = "hsl(0, 0%, 100%)";
+  document.getElementById("monthly").style.color = "hsl(235, 45%, 61%)";
 
   document.getElementById("workCurrent").innerHTML =
     data[0].timeframes.weekly.current + "hrs";
@@ -80,7 +108,15 @@ const showWeekly = async () => {
   document.getElementById("exercisePrevious").innerHTML =
     "Yesterday - " + data[3].timeframes.weekly.previous + "hrs";
 
-  console.log("weekly");
+  document.getElementById("socialCurrent").innerHTML =
+    data[4].timeframes.weekly.current + "hrs";
+  document.getElementById("socialPrevious").innerHTML =
+    "Yesterday - " + data[4].timeframes.weekly.previous + "hrs";
+
+  document.getElementById("selfCareCurrent").innerHTML =
+    data[5].timeframes.weekly.current + "hrs";
+  document.getElementById("selfCarePrevious").innerHTML =
+    "Yesterday - " + data[5].timeframes.weekly.previous + "hrs";
 };
 
 // Monthly
@@ -88,6 +124,10 @@ const showWeekly = async () => {
 const showMonthly = async () => {
   const response = await fetch("data.json");
   const data = await response.json();
+
+  document.getElementById("daily").style.color = "hsl(235, 45%, 61%)";
+  document.getElementById("weekly").style.color = "hsl(235, 45%, 61%)";
+  document.getElementById("monthly").style.color = "hsl(0, 0%, 100%)";
 
   document.getElementById("workCurrent").innerHTML =
     data[0].timeframes.monthly.current + "hrs";
@@ -109,7 +149,15 @@ const showMonthly = async () => {
   document.getElementById("exercisePrevious").innerHTML =
     "Yesterday - " + data[3].timeframes.monthly.previous + "hrs";
 
-  console.log("monthly");
+  document.getElementById("socialCurrent").innerHTML =
+    data[4].timeframes.monthly.current + "hrs";
+  document.getElementById("socialPrevious").innerHTML =
+    "Yesterday - " + data[4].timeframes.monthly.previous + "hrs";
+
+  document.getElementById("selfCareCurrent").innerHTML =
+    data[5].timeframes.monthly.current + "hrs";
+  document.getElementById("selfCarePrevious").innerHTML =
+    "Yesterday - " + data[5].timeframes.monthly.previous + "hrs";
 };
 
 fetchJsonFile();
