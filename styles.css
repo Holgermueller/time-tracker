@@ -137,6 +137,12 @@ h1 {
 }
 
 @media screen and (min-width: 600px) {
+  body,
+  html {
+    height: 100vh;
+    overflow: hidden;
+  }
+
   .grid-container {
     width: 95%;
     margin: 5% auto;
@@ -145,6 +151,12 @@ h1 {
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+
+  .card {
+    margin: 0;
+    height: 100%;
   }
 
   #user {
