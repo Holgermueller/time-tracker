@@ -24,127 +24,132 @@
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
   <body>
-    <div class="card" id="user">
-      <div class="user-info">
-        <img src="images/image-jeremy.png" alt="" />
-        <p>Report for</p>
+    <div class="grid-container">
+      <div class="card" id="user">
+        <div class="user-info">
+          <img src="images/image-jeremy.png" alt="" />
+          <p>Report for</p>
 
-        <h1>Jeremy Robson</h1>
-      </div>
-
-      <div class="button-container">
-        <button id="daily" onclick="showDaily()">Daily</button>
-
-        <button id="weekly" onclick="showWeekly()">Weekly</button>
-
-        <button id="monthly" onclick="showMonthly()">Monthly</button>
-      </div>
-    </div>
-
-    <div class="card" id="work">
-      <div class="card-data-container">
-        <p class="title">Work</p>
-
-        <div class="ellipsis">
-          <button>
-            <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
-          </button>
+          <h1>Jeremy Robson</h1>
         </div>
 
-        <p id="workCurrent" class="current"></p>
+        <div class="button-container">
+          <button id="daily" onclick="showDaily()">Daily</button>
 
-        <p id="workPrevious" class="previous"></p>
-      </div>
-    </div>
+          <button id="weekly" onclick="showWeekly()">Weekly</button>
 
-    <div class="card" id="play">
-      <div class="card-data-container">
-        <p class="title">Play</p>
-
-        <div class="ellipsis">
-          <button>
-            <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
-          </button>
+          <button id="monthly" onclick="showMonthly()">Monthly</button>
         </div>
-
-        <p id="playCurrent" class="current"></p>
-
-        <p id="playPrevious" class="previous"></p>
       </div>
-    </div>
 
-    <div class="card" id="study">
-      <div class="card-data-container">
-        <p class="title">Study</p>
+      <div class="card" id="work">
+        <div class="card-data-container">
+          <p class="title">Work</p>
 
-        <div class="ellipsis">
-          <button>
-            <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
-          </button>
+          <div class="ellipsis">
+            <button>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+            </button>
+          </div>
+
+          <p id="workCurrent" class="current"></p>
+
+          <p id="workPrevious" class="previous"></p>
         </div>
-
-        <p id="studyCurrent" class="current"></p>
-
-        <p id="studyPrevious" class="previous"></p>
       </div>
-    </div>
 
-    <div class="card" id="exercise">
-      <div class="card-data-container">
-        <p class="title">Exercise</p>
+      <div class="card" id="play">
+        <div class="card-data-container">
+          <p class="title">Play</p>
 
-        <div class="ellipsis">
-          <button>
-            <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
-          </button>
+          <div class="ellipsis">
+            <button>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+            </button>
+          </div>
+
+          <p id="playCurrent" class="current"></p>
+
+          <p id="playPrevious" class="previous"></p>
         </div>
-
-        <p id="exerciseCurrent" class="current"></p>
-
-        <p id="exercisePrevious" class="previous"></p>
       </div>
-    </div>
 
-    <div class="card" id="social">
-      <div class="card-data-container">
-        <p class="title">Social</p>
+      <div class="card" id="study">
+        <div class="card-data-container">
+          <p class="title">Study</p>
 
-        <div class="ellipsis">
-          <button>
-            <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
-          </button>
+          <div class="ellipsis">
+            <button>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+            </button>
+          </div>
+
+          <p id="studyCurrent" class="current"></p>
+
+          <p id="studyPrevious" class="previous"></p>
         </div>
-
-        <p id="socialCurrent" class="current"></p>
-
-        <p id="socialPrevious" class="previous"></p>
       </div>
-    </div>
 
-    <div class="card" id="selfCare">
-      <div class="card-data-container">
-        <p class="title">Self Care</p>
+      <div class="card" id="exercise">
+        <div class="card-data-container">
+          <p class="title">Exercise</p>
 
-        <div class="ellipsis">
-          <button>
-            <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
-          </button>
+          <div class="ellipsis">
+            <button>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+            </button>
+          </div>
+
+          <p id="exerciseCurrent" class="current"></p>
+
+          <p id="exercisePrevious" class="previous"></p>
         </div>
+      </div>
 
-        <p id="selfCareCurrent" class="current"></p>
+      <div class="card" id="social">
+        <div class="card-data-container">
+          <p class="title">Social</p>
 
-        <p id="selfCarePrevious" class="previous"></p>
+          <div class="ellipsis">
+            <button>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+            </button>
+          </div>
+
+          <p id="socialCurrent" class="current"></p>
+
+          <p id="socialPrevious" class="previous"></p>
+        </div>
+      </div>
+
+      <div class="card" id="selfCare">
+        <div class="card-data-container">
+          <p class="title">Self Care</p>
+
+          <div class="ellipsis">
+            <button>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis icon" />
+            </button>
+          </div>
+
+          <p id="selfCareCurrent" class="current"></p>
+
+          <p id="selfCarePrevious" class="previous"></p>
+        </div>
       </div>
     </div>
 
-    <div class="attribution">
+    <footer class="attribution">
       <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#" target="_blank">Holger Mueller</a>.
+        >. Coded by
+        <a href="https://holgermueller.github.io/portfolio/" target="_blank"
+          >Holger Mueller</a
+        >.
       </p>
-    </div>
+    </footer>
 
     <script src="index.js"></script>
   </body>

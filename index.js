@@ -106,17 +106,17 @@ const showWeekly = async () => {
   document.getElementById("exerciseCurrent").innerHTML =
     data[3].timeframes.weekly.current + "hrs";
   document.getElementById("exercisePrevious").innerHTML =
-    "Yesterday - " + data[3].timeframes.weekly.previous + "hrs";
+    "Last week  - " + data[3].timeframes.weekly.previous + "hrs";
 
   document.getElementById("socialCurrent").innerHTML =
     data[4].timeframes.weekly.current + "hrs";
   document.getElementById("socialPrevious").innerHTML =
-    "Yesterday - " + data[4].timeframes.weekly.previous + "hrs";
+    "Last week  - " + data[4].timeframes.weekly.previous + "hrs";
 
   document.getElementById("selfCareCurrent").innerHTML =
     data[5].timeframes.weekly.current + "hrs";
   document.getElementById("selfCarePrevious").innerHTML =
-    "Yesterday - " + data[5].timeframes.weekly.previous + "hrs";
+    "Last week  - " + data[5].timeframes.weekly.previous + "hrs";
 };
 
 // Monthly
@@ -147,17 +147,17 @@ const showMonthly = async () => {
   document.getElementById("exerciseCurrent").innerHTML =
     data[3].timeframes.monthly.current + "hrs";
   document.getElementById("exercisePrevious").innerHTML =
-    "Yesterday - " + data[3].timeframes.monthly.previous + "hrs";
+    "Last month - " + data[3].timeframes.monthly.previous + "hrs";
 
   document.getElementById("socialCurrent").innerHTML =
     data[4].timeframes.monthly.current + "hrs";
   document.getElementById("socialPrevious").innerHTML =
-    "Yesterday - " + data[4].timeframes.monthly.previous + "hrs";
+    "Last month - " + data[4].timeframes.monthly.previous + "hrs";
 
   document.getElementById("selfCareCurrent").innerHTML =
     data[5].timeframes.monthly.current + "hrs";
   document.getElementById("selfCarePrevious").innerHTML =
-    "Yesterday - " + data[5].timeframes.monthly.previous + "hrs";
+    "Last month - " + data[5].timeframes.monthly.previous + "hrs";
 };
 
 fetchJsonFile();

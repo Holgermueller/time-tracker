@@ -135,3 +135,103 @@ h1 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    width: 95%;
+    margin: 5% auto;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  #user {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .user-info {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .button-container {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+
+  .button-container #daily:hover,
+  .button-container #weekly:hover,
+  .button-container #monthly:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%) !important;
+  }
+
+  #work,
+  #play,
+  #study {
+    grid-row: 1;
+  }
+
+  #exercise,
+  #social,
+  #selfCare {
+    grid-row: 2;
+  }
+
+  #work,
+  #exercise {
+    grid-column: 2;
+  }
+
+  #play,
+  #social {
+    grid-column: 3;
+  }
+
+  #study,
+  #selfCare {
+    grid-column: 4;
+  }
+
+  .card-data-container {
+    height: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .card-data-container:hover {
+    cursor: pointer;
+    background-color: hsl(246, 80%, 60%);
+  }
+
+  .title,
+  .ellipsis {
+    grid-row: 1;
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+
+  .ellipsis button:hover {
+    cursor: pointer;
+  }
+
+  .previous {
+    text-align: left;
+    grid-row: 3;
+    width: 100%;
+  }
+
+  .attribution {
+    text-align: center;
+  }
+}
